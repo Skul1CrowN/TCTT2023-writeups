@@ -11,11 +11,11 @@ Let's check the file type of `CryptoLockerMe.exe` file type.
 It's the .Net application or C# Application, so I use `dnSpy` for this challenge.
 https://github.com/dnSpy/dnSpy
 
-Let's launch the program.
+Let's launch the program.    
 ![](./assets/Pasted%20image%2020230925013702.png)
 
 Wow, it very spook me, lol.
-OK what happened when I click `Got it` button.
+OK what happened when I click `Got it` button.    
 ![](./assets/Pasted%20image%2020230925013845.png)
 
 Why, I need to pay you when I can reverse engineer this application to recover the flag.
