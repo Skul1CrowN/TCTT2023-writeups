@@ -317,7 +317,7 @@ def sixfour(aha):
 It looks like the `encode` method argument may misspell `asci` which should be `ascii`. Next, `base64` is the Python module, but we haven't imported it yet, so don't forget to import it. It uses `b32decode` which is a method to decode base32, but look closely; `aha` has been inserted by `0`.
 
 Let's look the base32 table.
-![[Pasted image 20230918005002.png]]
+![](./assets/Pasted%20image%2020230918005002.png)
 
 As you can see, there is no `0` in base32 encoding, which means this is not base32, so I guess that it should be base64, so I change it to `b64decode` and the last line before the print flag.  
 `naja_b` is misspelled again (maybe this coder has a skill issue, just kidding).  
@@ -438,7 +438,7 @@ rolling(msg, num)
 ```
 
 Let's run the code.
-![[Pasted image 20230918010101.png]]
+![](./assets/Pasted%20image%2020230918010101.png)
 
 It says `byte 0xd3 is ordinal in range(128)` that means it cannot decode to `ascii` so I figured out that maybe it has rolled, but the problem is we don't know how many of those characters are shifted.
 
@@ -547,7 +547,7 @@ for i in range(26):
 ```
 
 I need to use try...except when the exception of `decode` method is throw error I want to pass to the next iteration and prevent program to be exited.
-![[Pasted image 20230918011057.png]]
+![](./assets/Pasted%20image%2020230918011057.png)
 
 We've got the flag!  
 The flag result is in MD5 format, so you can answer in that format.  
